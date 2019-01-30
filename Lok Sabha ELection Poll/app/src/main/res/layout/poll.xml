@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    android:weightSum="2">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/bjp"
+            android:padding="20dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:background="@drawable/bjp"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/congress"
+            android:padding="20dp"
+            android:adjustViewBounds="false"
+            android:scaleType="centerCrop"
+            android:background="@drawable/congress"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center"
+        android:layout_gravity="center"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/others"
+            android:padding="20dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:background="@drawable/others"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:id="@+id/nato"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:background="@drawable/nota"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>
